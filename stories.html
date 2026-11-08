@@ -3,44 +3,89 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Stories · Words by Dr. [Mother's Name]</title>
+  <title>Stories · Dr. Vaishnavi Kathavate</title>
+  <meta name="description" content="Short stories by Dr. Vaishnavi Kathavate.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Lora:ital@0;1&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&amp;family=Jost:wght@400;500&amp;family=Lora:ital,wght@0,400;0,500;1,400&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <header>
-    <h1 class="site-title">Words by Dr. [Mother's Name]</h1>
-    <p class="tagline">Stories and poems from a quiet corner</p>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="stories.html" class="active">Stories</a>
-      <a href="poems.html">Poems</a>
-      <a href="about.html">About</a>
-    </nav>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="index.html">
+        <span class="monogram">VK</span>
+        <span>
+          <span class="brand-name">Dr. Vaishnavi Kathavate</span>
+          <span class="brand-role">Writer · Ayurvedic Physician</span>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Main">
+        <a href="index.html">Home</a>
+        <a href="stories.html" class="active">Stories</a>
+        <a href="poems.html">Poems</a>
+        <a href="medicine.html">Medicine</a>
+        <a href="about.html">About</a>
+      </nav>
+    </div>
   </header>
 
   <main>
-    <h2>Stories</h2>
+    <section class="page-head">
+      <div class="container">
+        <p class="eyebrow">Creative writing</p>
+        <h1>Stories</h1>
+        <p>Short fiction about memory, family and the quiet turns of ordinary lives.</p>
+      </div>
+    </section>
 
-    <!-- TO ADD A NEW STORY:
-         1. Copy stories/the-monsoon-letter.html, rename it, and change the text.
-         2. Copy one <li>...</li> block below, paste it at the TOP of the list,
-            and update the link, title, date and summary. -->
-    <ul class="post-list">
-      <li>
+    <section class="listing">
+      <div class="narrow">
+        <!-- TO ADD A NEW STORY:
+             1. Copy stories/the-monsoon-letter.html, rename it, and change the text.
+             2. Copy one <article class="card creative">...</article> block below, paste it at
+                the TOP of the list, and update the link, title, summary and date. -->
+        <div class="cards single">
+      <article class="card creative">
+        <span class="tag">Story</span>
         <h3><a href="stories/the-monsoon-letter.html">The Monsoon Letter</a></h3>
-        <span class="meta">7 November 2026</span>
         <p>A letter arrives forty years late, and with it, a summer she had forgotten.</p>
-      </li>
-    </ul>
+        <div class="meta">7 November 2026</div>
+      </article>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
-    © 2026 Dr. [Mother's Name]. All rights reserved.<br>
-    All stories and poems on this site are original works. No part may be copied,
-    reproduced or republished without written permission from the author.
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <p class="footer-brand">Dr. Vaishnavi Kathavate</p>
+          <p>Stories and poems written between clinic hours, and writing on traditional
+            medicine and health drawn from years of practice.</p>
+          <p><a href="about.html">About the author →</a></p>
+        </div>
+        <div>
+          <h4>Creative writing</h4>
+          <ul>
+            <li><a href="stories.html">Stories</a></li>
+            <li><a href="poems.html">Poems</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Medicine</h4>
+          <ul>
+            <li><a href="medicine.html#traditional">Traditional Medicine</a></li>
+            <li><a href="medicine.html#health">Medicine &amp; Health</a></li>
+          </ul>
+        </div>
+      </div>
+      <p class="copyright">© 2026 Dr. Vaishnavi Kathavate. All rights reserved.<br>
+        All stories, poems and articles on this site are original works.<br>
+        No part may be copied, reproduced or republished without written permission from the author.</p>
+    </div>
   </footer>
 
 </body>
