@@ -31,7 +31,10 @@ medicine/       One HTML file per medical article or blog post
 ## Design notes
 
 - Stories and poems use a terracotta accent; medical writing uses sage green. Colours are at the top of `style.css`.
-- The site switches to a dark theme automatically when the reader's device is in dark mode.
+- The site opens in bright mode. Readers can switch to dark mode with the sun/moon switch in the
+  header; their choice is remembered in their browser for later visits (`theme.js`, dark colours in `style.css`).
+  New pages need the two `<script>` lines from the `<head>` and the `theme-toggle` button from the header —
+  copying an existing page brings these along automatically.
 - To add a photo, put it in an `images/` folder and follow the comment next to the "VK" circle on `index.html` and `about.html`.
 
 ## Copyright
