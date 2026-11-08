@@ -35,6 +35,9 @@ medicine/       One HTML file per medical article or blog post
   header; their choice is remembered in their browser for later visits (`theme.js`, dark colours in `style.css`).
   New pages need the two `<script>` lines from the `<head>` and the `theme-toggle` button from the header —
   copying an existing page brings these along automatically.
+- **After changing `style.css` or `theme.js`**, raise the number in `style.css?v=2` / `theme.js?v=2` on every
+  page (e.g. to `v=3`, using Find & Replace in all files). This makes readers' browsers fetch the new version
+  instead of an old saved copy.
 - To add a photo, put it in an `images/` folder and follow the comment next to the "VK" circle on `index.html` and `about.html`.
 
 ## Copyright
